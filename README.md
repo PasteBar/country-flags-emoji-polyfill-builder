@@ -6,7 +6,8 @@ The Country Flag Emoji Polyfill is a crucial tool for developers who need to ens
 
 ## Features
 
-## Simple Integration: The polyfill can be included in projects via NPM or directly through a script tag from the Skypack CDN, facilitating easy adoption.
+### Simple Integration: 
+The polyfill can be included in projects via NPM or directly through a script tag from the Skypack CDN, facilitating easy adoption.
 
 ### Webfont Utilization
 It uses the "Twemoji Country Flags" webfont to ensure that emojis are displayed as intended, without affecting other text styles thanks to the unicode-range property.
