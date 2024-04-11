@@ -1,27 +1,26 @@
-# Overview of Country Flag Emoji Polyfill
+## Overview of Country Flag Emoji Polyfill
 
 ![screenshot of broken emojis](https://user-images.githubusercontent.com/703546/159265695-1ed79f91-2398-4e02-a38d-7aa67426d945.png)
 
 The Country Flag Emoji Polyfill is a crucial tool for developers who need to ensure that country flag emojis display correctly across various platforms, particularly on Chromium-based browsers and Windows systems where native support is lacking. If you've noticed that emojis like "🇨🇭" appear as "ᴄʜ" instead of as flags, this polyfill is designed to address that exact issue.
 
-# Features
+## Features
 
 ## Simple Integration: The polyfill can be included in projects via NPM or directly through a script tag from the Skypack CDN, facilitating easy adoption.
 
-## Webfont Utilization: It uses the "Twemoji Country Flags" webfont to ensure that emojis are displayed as intended, without affecting other text styles thanks to the unicode-range property.
+### Webfont Utilization
+It uses the "Twemoji Country Flags" webfont to ensure that emojis are displayed as intended, without affecting other text styles thanks to the unicode-range property.
 
-## Dynamic Loading: The polyfill intelligently injects the webfont only when necessary, ensuring optimal performance without unnecessarily loading resources on browsers that already support country flag emojis.
-Usage
+### Dynamic Loading
+The polyfill intelligently injects the webfont only when necessary, ensuring optimal performance without unnecessarily loading resources on browsers that already support country flag emojis.
 
-Developers can integrate the polyfill into their web projects by installing it via NPM or including it directly in their HTML with a script tag. Additionally, they must update their CSS to use the "Twemoji Country Flags" font in their font-family definitions to activate the emoji display where needed.
-
-# Technical Details
+## Technical Details
 The backbone of this solution is the selective use of a subset of "Twemoji Mozilla", optimized to be just 78kb, thus minimizing the impact on application performance. It's designed to work specifically with browsers that support color emojis but not country flags, providing a targeted fix.
 
-# Background and Rationale
+## Background and Rationale
 Despite the broad adoption of emojis, support for country flags remains inconsistent in major browsers on Windows. This polyfill steps in to fill that gap, particularly in response to the lack of planned support from Chromium projects. It ensures that developers can provide a uniform experience across platforms without waiting for browser vendors to implement native support.
 
-# Build and Maintenance
+## Build and Maintenance
 The repository includes instructions for building the polyfill locally, catering to updates in the "Twemoji Mozilla" repository, ensuring that the polyfill remains current with any new country flags or emoji updates.
 
 This polyfill is an essential tool for any web developer looking to provide a consistent user experience across all browsers and platforms, particularly in internationalized applications where country flags play a crucial role in content presentation.
@@ -31,6 +30,7 @@ This module is sponsored by [TalkJS](https://talkjs.com), a Chat API with pre-bu
 [![talkjs logo](https://user-images.githubusercontent.com/703546/159268048-19871f36-90f2-409f-ad9f-af711abc8302.png)](https://talkjs.com)
 
 ## Usage
+Developers can integrate the polyfill into their web projects by installing it via NPM or including it directly in their HTML with a script tag. Additionally, they must update their CSS to use the "Twemoji Country Flags" font in their font-family definitions to activate the emoji display where needed.
 
 ### 1. With NPM:
 
