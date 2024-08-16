@@ -25,5 +25,8 @@
   },
   "devDependencies": {
     "microbundle": "^0.15.1"
+  },
+  "dependencies": {
+    "is-emoji-supported": "^0.0.5"
   }
 }

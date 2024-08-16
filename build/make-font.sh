@@ -21,11 +21,12 @@
 #     - U+1F3F4 is "Waving black flag"
 #     - U+E0061-E007A are Latin Small Letter "Tags"
 #     - U+E007F the "Cancel tag"
+
 pyftsubset ./Twemoji.Mozilla.ttf \
-  --no-subset-tables+=FFTM \
-  --unicodes=U+1F1FA,U+1F1F8,U+1F1F7,U+1F1FA,U+1F1FA,U+1F1E6U+E0077,U+E007F,U+1F1E9,U+1F1EA,U+1F1EA,U+1F1F8,U+1F1EB,U+1F1F7 \
-  --output-file=./TwemojiCountryFlags.woff2 \
-  --flavor=woff2
+	  --no-subset-tables+=FFTM \
+	    --unicodes=U+1F1FA,U+1F1F8,U+1F1F7,U+1F1FA,U+1F1FA,U+1F1E6,U+E0077,U+E007F,U+1F1E9,U+1F1EA,U+1F1EA,U+1F1F8,U+1F1EB,U+1F1F7,U+1F1EE,U+1F1F9,U+1F1E8,U+1F1F3 \
+	      --output-file=./TwemojiCountryFlags.woff2 \
+	        --flavor=woff2
 
 echo "Done! Created TwemojiCountryFlags.woff2 in current folder"
 # rm $TTF
